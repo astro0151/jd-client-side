@@ -1,24 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+// import { Route, Routes } from 'react-router-dom';
+
+import HomeAndLogin from './components/corporate/HomeAndLogin';
+// import './css/HomeStyle.css'
+// import './css/dasboard.css'
+import './css/NavBar.css'
+import './css/Footer.css'
+import './css/Login.css'
+import Dasboard1 from './components/corporate/Dasboard1';
+import Emailing from './components/corporate/Emailing';
+import VendorsDasboard from './components/corporate/VendorsDasboard';
+import NavBar from './components/corporate/NavBar';
+import Footer from './components/corporate/Footer';
+import Login from './components/corporate/Login';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+   <div>
+    <NavBar />
+       {/* <HomeAndLogin /> */}
+       {/* <Dasboard1 /> */}
+       {/* <Emailing /> */}
+      {/* <VendorsDasboard /> */}
+   <Login />
+     <Footer />
+   </div>
   );
 }
 

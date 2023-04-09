@@ -1,0 +1,65 @@
+ ----------some api work from previous project-----------
+     services class--
+     import axios from "axios";
+const CUST_API_URL='http://localhost:8081/api/v1/customers';
+const CUST_API_URL2='http://localhost:8080/api/v1/customers';
+class CustomerService{
+    getAllCustomers(){
+        return axios.get(CUST_API_URL);
+    } 
+    registerAdmin(adminObj){
+        return axios.post(CUST_API_URL2,adminObj);
+    }
+}
+export default new CustomerService();
+    service class ends
+
+    component class
+ CustomerService.registerAdmin(adminObj).then((response)=>{
+            console.log(response.data);
+        }).catch(err=>{
+            console.log(err);
+        })
+        console.log(adminObj); // see object details in console browser
+    }
+
+    // /*                         NOTE         Routing             
+//  <img src={logo} className="App-logo" alt="logo" />   copy img tag from here
+//  <Routes>
+//            <Route path='/register' element={<Register/>} />
+//            <Route path='/login' element={<Login/>} />        
+//            <Route path='/' element={<Home/>} />
+//            {/* <Route path='/adminlogin' element={<AdminHome/>} /> */}
+//            {/* <Route path='about' Component={About} /> */}
+//            {/* <Route path='/contact' element={<Contact/>} /> */}
+//            </Routes>
+//            ***/
+
+TABLE IN REACT DEMO
+
+
+     <table>
+        <thead className="table-head">
+            <th>Order Id</th>
+            <th>Name</th>
+            <th>Test name</th>
+        </thead>
+        <tbody>
+                {
+                                Vendors.map(
+                                    vendors=> 
+                                    <tr key={customer.id}>
+                                            <td>{customer.order_id}</td>
+                                            <td>{customer.name}</td>
+                                            <td>{customer.testName}</td>
+                                            <td>{customer.dob} </td>
+                                            <td>{customer.gender}</td>
+                                            <td>{customer.mo_number}</td>
+                                            <td>{customer.address} </td>
+                                    </tr>
+                                )
+                }
+        </tbody>
+     </table>                       
+
+     token 1255f014-c8dc-43fc-8f57-32223c9c8ed8

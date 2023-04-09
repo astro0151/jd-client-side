@@ -1,0 +1,71 @@
+*{
+    margin: 0;
+    top: 0;
+    box-sizing: border-box;
+}
+.top-table{
+    display: flex;
+    margin: 10px;
+}
+.down-table{
+    display: flex;
+    margin: 10px;
+}
+.vendors{
+/* background-color: red; */
+width: 20%;
+height: 300px;
+overflow: hidden;
+overflow-y: scroll;
+margin: 5px;
+}
+.vendh5{
+
+}
+#td-1{
+    height: 30px;
+}
+.insurance{
+    /* background-color: green; */
+    width: 30%;
+    height: 300px;
+    overflow: hidden;
+overflow-y: scroll;
+margin: 5px;
+}
+.orders{
+    /* background-color: black; */
+    width: 50%;
+    height: 300px;
+    overflow: hidden;
+overflow-y: scroll;
+margin: 5px;
+} 
+.policy{
+    /* background-color: white; */
+    width: 50%;height: 300px;
+    overflow: hidden;
+overflow-y: scroll;
+margin: 5px;
+} 
+.customers{
+    /* background-color: yellow; */
+    width: 50%;height: 300px;
+    overflow: hidden;
+overflow-y: scroll;
+margin: 5px;
+}
+
+
+.toggle{
+    display: flex;
+    
+}
+#toggle-btn-vendor{
+    margin-left: 20px;
+    background-color: black;
+    color: white;
+}
+#table-vendors{
+    display: none;
+}
