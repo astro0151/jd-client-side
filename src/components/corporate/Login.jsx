@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import ReactDOM from "react-dom";
 import NavBar from "./NavBar";
 import VendorsDasboard from "./VendorsDasboard";
+import DasboardMain from "./DasboardMain";
 
 // import "./styles.css";
 
@@ -90,7 +91,7 @@ function Login() {
       <div className="login-form">
        
         {/* {isSubmitted ? <div>User is successfully logged in</div> : renderForm} */}
-        {isSubmitted ? <VendorsDasboard /> : renderForm}
+        {isSubmitted ? <DasboardMain /> : renderForm}
       </div>
     </div>
   );

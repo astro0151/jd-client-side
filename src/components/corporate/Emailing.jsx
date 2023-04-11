@@ -69,7 +69,7 @@ function Emailing() {
           ></textarea>
         </div>
         <div className="form-group">
-            <input className="btn btn-primary mt-3 " type="submit" value="Send"  />
+            <input className="btn btn-primary mt-1 email-btn" type="submit" value="Send"  />
         </div>
       </form>
     </div>

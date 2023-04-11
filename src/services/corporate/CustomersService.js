@@ -1,8 +1,8 @@
 import axios from "axios";
 
 //  API variable
-const CUSTOMER_GET_API ='http://localhost:8080/api/jd/vendors/insurances/policies/pol_orders/customers/get';
-const CUSTOMER_GET_API_BY_ID='http://localhost:8080/api/jd/vendors/insurances/policies/pol_orders/customers/1';
+const CUSTOMER_GET_API ='http://localhost:8080/api/jd/vendors/policies/customers/get';
+const CUSTOMER_GET_API_BY_ID='http://localhost:8080/api/jd/vendors/policies/customers/id';
 const CUSTOMER_POST_API ='http://localhost:8080/api/jd/vendors/insurances/policies/pol_orders/customers/add';
 
 class CustomersService {

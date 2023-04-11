@@ -13,16 +13,7 @@ function Dasboard1() {
   const [policies, setPolicies] = useState([]);
   const [insurances, setInsurances] = useState([]);
 
-  useEffect(() => {
-    VendorService.getVendors()
-      .then((response) => {
-        setVendors(response.data);
-        console.log(response.data);
-      })
-      .catch((err) => {
-        console.log(err);
-      });
-  }, []);
+ 
   useEffect(() => {
     OrdersDetails.getOrders()
       .then((response) => {
@@ -162,7 +153,7 @@ function Dasboard1() {
           </div>
         </div>
         <div className="down-table">
-          <div className="policy">
+        <div className="policy">
             <h5>Insurance Policies</h5>
             <table className="table table-bordered table-striped">
               <thead className="table-head">
